@@ -6,3 +6,4 @@ django-model-mixin
 django-ordered-model
 django-taggit
 django-hashtag
+django-prose-editor
