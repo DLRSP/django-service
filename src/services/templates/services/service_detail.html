@@ -16,8 +16,17 @@
 {% endblock head_ldjson %}
 
 {% block css %}
-  {% compress css file service %}
+  {% compress css file service-detail-plugin %}
+  <link rel="stylesheet" type="text/css" href="{% static 'base/css/plugins/lightgallery.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'base/css/plugins/lg-transitions.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'base/css/plugins/lg-autoplay.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'base/css/plugins/lg-thumbnail.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'base/css/plugins/lg-zoom.css' %}">
+  {% endcompress %}
+
+  {% compress css file service-detail %}
   <link rel="stylesheet" type="text/css" href="{% static 'base/css/style-blog.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'base/css/style-lightgallery.css' %}">
   {% endcompress %}
 {% endblock css %}
 
@@ -63,9 +72,6 @@
                 <div class="space10"></div>
                 {% endif%}
 
-                {% if image_list %}<div id="inline-gallery-container" class="inline-gallery-container"></div>
-                <div class="space70"></div>
-                {% endif%}
 
                 {% if object.p2 %}
                 {% if object.p2_title %}<h2>{{ object.p2_title }}</h2>{% endif %}
@@ -86,6 +92,11 @@
                 </div>
                 <!-- /.tiles -->
                 <div class="clearfix"></div>
+                {% endif%}
+
+                <div id="inline-gallery-container" class="inline-gallery-container"></div>
+                {% if image_list %}
+                <div class="space70"></div>
                 {% endif%}
 
                 {% if object.p3 %}
@@ -219,7 +230,7 @@
 {% endblock content %}
 
 {% block js %}
-  {% compress js file service-plugin %}
+  {% compress js file service-detail-plugin %}
   <!-- LIGHTGALLERY -->
   <script src="{% static 'base/js/plugins/lightgallery.min.js' %}"></script>
   <script src="{% static 'base/js/plugins/lg-autoplay.min.js' %}"></script>
@@ -237,6 +248,7 @@
      ];
   </script>
 
-  {% compress js file service %}
+  {% compress js file service-detail %}
+  <script src="{% static 'services/js/scripts-service-detail.js' %}"></script>
   {% endcompress %}
 {% endblock js %}

@@ -1,6 +1,14 @@
 $(document).ready(function() {
     'use strict';
     /*-----------------------------------------------------------------------------------*/
+    /*	BACKGROUND IMAGE
+    /*-----------------------------------------------------------------------------------*/
+    $(".bg-image").css('background-image', function() {
+        var bg = ('url(' + $(this).data("image-src") + ')');
+        return bg;
+    });
+
+    /*-----------------------------------------------------------------------------------*/
     /*	LIGHTGALLERY
     /*-----------------------------------------------------------------------------------*/
     var $lgContainer = document.getElementById('inline-gallery-container');
@@ -22,4 +30,6 @@ $(document).ready(function() {
     setTimeout(() => {
       lg.openGallery();
     }, 500);
+
+
 });
