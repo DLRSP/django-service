@@ -12,42 +12,43 @@
 ## Test [![codecov.io](https://codecov.io/github/DLRSP/django-service/coverage.svg?branch=main)](https://codecov.io/github/DLRSP/django-service?branch=main) [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/DLRSP/django-service/main.svg)](https://results.pre-commit.ci/latest/github/DLRSP/django-service/main) [![gitthub.com](https://github.com/DLRSP/django-service/actions/workflows/ci.yaml/badge.svg)](https://github.com/DLRSP/django-service/actions/workflows/ci.yaml)
 
 ## Check Demo Project
-* Check the demo repo on [GitHub](https://github.com/DLRSP/example/tree/django-service)
+
+- Check the demo repo on [GitHub](https://github.com/DLRSP/example/tree/django-service)
 
 ## Requirements
--   Python 3.8+ supported.
--   Django 3.2+ supported.
+
+- Python 3.8+ supported.
+- Django 4.2+ supported.
 
 ## Setup
 1. Install from **pip**:
-    ```shell
-    pip install django-services
-    ```
+   ```shell
+   pip install django-services
+   ```
 2. Modify `settings.py` by adding the app to `INSTALLED_APPS`:
-    ```python
-    INSTALLED_APPS = [
-        # ...
-        "services",
-        # ...
-    ]
-    ```
+   ```python
+   INSTALLED_APPS = (
+       # ...
+       "services",
+       # ...
+   )
+   ```
 3. Finally, modify your project `urls.py` with handlers for all errors:
-    ```python
-    # ...other imports...
-    
-    urlpatterns = [
-        # ...other urls...
-    ]
-    ```
+   ```python
+   # ...other imports...
+
+   urlpatterns = [
+       # ...other urls...
+   ]
+   ```
 4. Execute Django's command `migrate` inside your project's root:
-    ```shell
-    python manage.py migrate
-    Running migrations:
-      Applying services.0001_initial... OK
-    ```
+   ```shell
+   python manage.py migrate
+   Running migrations:
+    Applying services.0001_initial... OK
+   ```
 
 ## Run Example Project
-
 ```shell
 git clone --depth=50 --branch=django-services https://github.com/DLRSP/example.git DLRSP/example
 cd DLRSP/example
