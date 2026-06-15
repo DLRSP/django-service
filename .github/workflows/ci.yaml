@@ -14,5 +14,10 @@ on:
 
 jobs:
   ci:
-    uses: DLRSP/workflows/.github/workflows/ci.yaml@v1.15.0
+    uses: DLRSP/workflows/.github/workflows/ci.yaml@main
+    permissions:
+      contents: read
+      actions: read
+      checks: write
+      security-events: write
     secrets: inherit
