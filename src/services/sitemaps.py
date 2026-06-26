@@ -11,7 +11,7 @@ class ServiceCategorySitemap(sitemaps.Sitemap):
         return ServiceCategory.objects.all().order_by("id")
 
     def location(self, item):
-        return reverse("sign-detail", args=[item.slug])
+        return reverse("services-category-detail", args=[item.slug])
 
 
 class ServiceSitemap(sitemaps.Sitemap):
@@ -22,4 +22,4 @@ class ServiceSitemap(sitemaps.Sitemap):
         return Service.objects.all().order_by("id")
 
     def location(self, item):
-        return reverse("services-detail", args=[item.category.slug, item.slug])
+        return reverse("service-detail", args=[item.category.slug, item.slug])
