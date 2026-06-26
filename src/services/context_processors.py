@@ -17,7 +17,7 @@ def common_context(request):
     context_cache = None
     try:
         context_cache = cache.get(cache_key)
-    except Exception as err:
+    except Exception:
         context_cache = None
 
     if context_cache is None:
@@ -29,7 +29,7 @@ def common_context(request):
                 'all_category': ServiceCategory.objects.filter(published=True).values('name', 'slug').order_by('order'),
                 'all_service': queryset,
             }
-            context_cache = cache.set(cache_key, context, timeout=86400)
+            cache.set(cache_key, context, timeout=86400)
             return context
         except Exception as err:
             messages.error(request, err)

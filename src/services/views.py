@@ -1,6 +1,5 @@
 from django.http import Http404
 from django.utils.functional import cached_property
-from django.core.exceptions import ObjectDoesNotExist
 from django.views.generic import ListView, DetailView
 from filer_optimizer.utils import annotate_queryset_with_thumbnails
 from .models import ServiceCategory, Service, ServiceImage
@@ -9,17 +8,23 @@ from django.db.models import Q
 
 
 def get_prev_obj(current_obj_pk, **kwargs):
-    try:
-        return Service.objects.filter(published=True).filter(pk__lt=current_obj_pk).values('category__slug', 'name', 'slug').order_by('-order').first()
-    except ObjectDoesNotExist:
-        return Service.objects.filter(published=True).get(pk=current_obj_pk).values('category__slug', 'name', 'slug')
+    return (
+        Service.objects.filter(published=True)
+        .filter(pk__lt=current_obj_pk)
+        .values("category__slug", "name", "slug")
+        .order_by("-order")
+        .first()
+    )
 
 
 def get_next_obj(current_recipe_pk, **kwargs):
-    try:
-        return Service.objects.filter(published=True).filter(pk__gt=current_recipe_pk).values('category__slug', 'name', 'slug').order_by('order').first()
-    except ObjectDoesNotExist:
-        return Service.objects.filter(published=True).get(pk=current_recipe_pk).values('category__slug', 'name', 'slug')
+    return (
+        Service.objects.filter(published=True)
+        .filter(pk__gt=current_recipe_pk)
+        .values("category__slug", "name", "slug")
+        .order_by("order")
+        .first()
+    )
 
 
 class ServiceCategoryListView(ListView):
@@ -40,18 +45,22 @@ class ServiceCategoryDetailView(DetailView):
     # template_name = "recipes/recipe_list_image_grid.html"
 
     def get_object(self, **kwargs):
-        queryset = ServiceCategory.objects.filter(slug=self.kwargs["slug"]).values(
+        queryset = ServiceCategory.objects.filter(slug=self.kwargs["slug_cat"]).values(
             "slug", "name", "description"
         )
-        queryset = annotate_queryset_with_thumbnails(queryset, "head")
+        queryset = annotate_queryset_with_thumbnails(
+            queryset, "head", img_name="image_header"
+        )
         return queryset[0]
 
     def get_context_data(self, **kwargs):
         context = super(DetailView, self).get_context_data(**kwargs)
-        queryset = Service.objects.filter(category__slug=context["object"].slug).values(
+        queryset = Service.objects.filter(category__slug=context["object"]["slug"]).values(
             "category__slug", "category__name", "slug", "name"
         )
-        queryset = annotate_queryset_with_thumbnails(queryset, "head")
+        queryset = annotate_queryset_with_thumbnails(
+            queryset, "head", img_name="image_preview"
+        )
         context["object_list"] = queryset
         return context
 
@@ -85,7 +94,9 @@ class ServiceDetailView(DetailView):
         languages = dict(settings.LANGUAGES).keys()
         query = Q()
         for lang in languages:
-            kwargs = {f"{field}_{lang}": self.kwargs["slug"]}
+            # modeltranslation builds field names with underscores, so a language
+            # code such as "zh-hans" maps to the "<field>_zh_hans" column.
+            kwargs = {f"{field}_{lang.replace('-', '_')}": self.kwargs["slug"]}
             query |= Q(**kwargs)
         return query
 
@@ -113,11 +124,7 @@ class ServiceDetailView(DetailView):
 
     @cached_property
     def get_tag_list(self):
-        tag_list = []
-        for tag in self.object.tags.all():
-            if tag not in tag_list:
-                tag_list.append(tag)
-        return tag_list
+        return list(self.object.tags.all())
 
     def get_context_data(self, **kwargs):
         context = super(DetailView, self).get_context_data(**kwargs)
