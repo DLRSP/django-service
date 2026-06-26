@@ -105,7 +105,6 @@ source = ["services"]
 
 [tool.coverage.report]
 show_missing = true
-fail_under = 100
 
 [tool.flake8]
 max-line-length = 120

@@ -7,3 +7,6 @@ django-ordered-model
 django-taggit
 django-hashtag
 django-prose-editor
+# Required at import time by django-filer-optimizer (filer_optimizer.utils),
+# which does not declare it as a dependency.
+pillow-avif-plugin
