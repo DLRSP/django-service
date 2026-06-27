@@ -61,7 +61,7 @@ lint = [
 package-dir = {"" = "src"}
 
 [tool.setuptools.dynamic]
-dependencies = {file = "requirements/requirements.in"}
+dependencies = {file = "requirements/runtime.in"}
 version = {attr = "services.VERSION"}
 
 [tool.setuptools.packages.find]
