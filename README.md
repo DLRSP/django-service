@@ -10,6 +10,7 @@
 ## GitHub ![GitHub release](https://img.shields.io/github/tag/DLRSP/django-service.svg) ![GitHub release](https://img.shields.io/github/release/DLRSP/django-service.svg)
 
 ## Test [![codecov.io](https://codecov.io/github/DLRSP/django-service/coverage.svg?branch=main)](https://codecov.io/github/DLRSP/django-service?branch=main) [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/DLRSP/django-service/main.svg)](https://results.pre-commit.ci/latest/github/DLRSP/django-service/main) [![gitthub.com](https://github.com/DLRSP/django-service/actions/workflows/ci.yaml/badge.svg)](https://github.com/DLRSP/django-service/actions/workflows/ci.yaml)
+[![Docs](https://img.shields.io/badge/docs-GitHub_Pages-blue)](https://dlrsp.github.io/django-service/)
 
 ## Check Demo Project
 
@@ -17,8 +18,8 @@
 
 ## Requirements
 
-- Python 3.8+ supported.
-- Django 4.2+ supported.
+- Python 3.10–3.14 supported.
+- Django 4.2 and 5.2 LTS supported.
 
 ## Setup
 1. Install from **pip**:

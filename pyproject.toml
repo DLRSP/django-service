@@ -1,5 +1,8 @@
 [build-system]
-requires = ["setuptools >= 40.8.0", "django < 5"]
+requires = [
+  "setuptools >= 77",
+  "wheel",
+]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -11,7 +14,8 @@ authors = [
 ]
 requires-python = ">=3.10"
 dynamic = ["dependencies", "version"]
-license = {file = "LICENSE"}
+license = "MIT"
+license-files = ["LICENSE"]
 keywords = ["django", "services"]
 classifiers = [
   #   3 - Alpha
@@ -22,18 +26,19 @@ classifiers = [
   # Indicate who your project is intended for
   "Intended Audience :: Developers",
 
-  # Pick your license
-  "License :: OSI Approved :: MIT License",
-
   # Specify the Python versions
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3 :: Only",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
 
   # Specify the Django versions
   "Framework :: Django",
   "Framework :: Django :: 4.2",
+  "Framework :: Django :: 5.2",
 
   # Specify the OS/Environment info
   "Environment :: Web Environment",
@@ -62,13 +67,13 @@ package-dir = {"" = "src"}
 
 [tool.setuptools.dynamic]
 dependencies = {file = "requirements/runtime.in"}
-version = {attr = "services.VERSION"}
+version = {attr = "services.__version__"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.black]
-target-version = ['py311']
+target-version = ['py314']
 
 [tool.isort]
 profile = "black"
@@ -122,7 +127,7 @@ package = "services"
 package_dir = "src"
 filename = "CHANGELOG.rst"
 directory = "news/"
-version = "0.1.0"
+version = "0.3.0"
 
 # For rendering properly for this project
 issue_format = "`#{issue} <https://github.com/DLRSP/django-service/issues/{issue}>`_"
@@ -141,7 +146,7 @@ type = [
 
 # bump-my-version
 [tool.bumpversion]
-current_version = "0.2.3"
+current_version = "0.3.0"
 allow_dirty = true
 
 [[tool.bumpversion.files]]
