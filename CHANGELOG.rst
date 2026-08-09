@@ -1,3 +1,9 @@
+services 0.3.1 (2026-08-09)
+===========================
+
+No significant changes.
+
+
 django-service 0.3.0 (unreleased)
 =================================
 
