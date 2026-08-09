@@ -1,0 +1,6 @@
+django-service 0.3.0 (unreleased)
+=================================
+
+* Declare support for Python 3.12–3.14 and Django 5.2 LTS.
+* Align packaging with the shared module template (wheel lock files, SPDX license).
+* Remove legacy ``setup.py`` translation build hooks (locale compile is handled in CI).

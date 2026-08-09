@@ -1,4 +1,4 @@
-# django-service [![PyPi license](https://img.shields.io/pypi/l/django-service.svg)](https://pypi.python.org/pypi/django-service)
+﻿# django-service [![PyPi license](https://img.shields.io/pypi/l/django-service.svg)](https://pypi.python.org/pypi/django-service)
 
 [![PyPi status](https://img.shields.io/pypi/status/django-service.svg)](https://pypi.python.org/pypi/django-service)
 [![PyPi version](https://img.shields.io/pypi/v/django-service.svg)](https://pypi.python.org/pypi/django-service)
@@ -18,13 +18,13 @@
 
 ## Requirements
 
-- Python 3.10–3.14 supported.
+- Python 3.10-3.14 supported.
 - Django 4.2 and 5.2 LTS supported.
 
 ## Setup
 1. Install from **pip**:
    ```shell
-   pip install django-services
+   pip install django-service
    ```
 2. Modify `settings.py` by adding the app to `INSTALLED_APPS`:
    ```python
@@ -51,7 +51,7 @@
 
 ## Run Example Project
 ```shell
-git clone --depth=50 --branch=django-services https://github.com/DLRSP/example.git DLRSP/example
+git clone --depth=50 --branch=django-service https://github.com/DLRSP/example.git DLRSP/example
 cd DLRSP/example
 python manage.py runserver
 ```
