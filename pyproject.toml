@@ -1,5 +1,8 @@
 [build-system]
-requires = ["setuptools >= 40.8.0", "django < 5"]
+requires = [
+  "setuptools >= 77",
+  "wheel",
+]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,39 +10,32 @@ name = "django-service"
 description = "Django application provide simple category/service details"
 readme = "README.md"
 authors = [
-    {name = "DLRSP", email = "dlrsp.dev@gmail.com"},
+    { name = "DLRSP", email = "dlrsp.dev@gmail.com" },
 ]
 requires-python = ">=3.10"
 dynamic = ["dependencies", "version"]
-license = {file = "LICENSE"}
-keywords = ["django", "services"]
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = [
+    "django",
+    "services",
+]
 classifiers = [
-  #   3 - Alpha
-  #   4 - Beta
-  #   5 - Production/Stable
   "Development Status :: 4 - Beta",
-
-  # Indicate who your project is intended for
   "Intended Audience :: Developers",
-
-  # Pick your license
-  "License :: OSI Approved :: MIT License",
-
-  # Specify the Python versions
+  "Programming Language :: Python",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3 :: Only",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
-
-  # Specify the Django versions
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
   "Framework :: Django",
   "Framework :: Django :: 4.2",
-
-  # Specify the OS/Environment info
+  "Framework :: Django :: 5.2",
   "Environment :: Web Environment",
   "Operating System :: OS Independent",
-
-  # Specify the optional Topic
   "Topic :: Internet :: WWW/HTTP",
   "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
   "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
@@ -47,28 +43,57 @@ classifiers = [
   "Topic :: Software Development :: Libraries",
 ]
 
+[project.urls]
+Homepage = "https://github.com/DLRSP/django-service"
+Documentation = "https://dlrsp.github.io/django-service/"
+Repository = "https://github.com/DLRSP/django-service"
+Issues = "https://github.com/DLRSP/django-service/issues"
+Changelog = "https://github.com/DLRSP/django-service/blob/main/CHANGELOG.rst"
+Funding = "https://github.com/sponsors/DLRSP"
+
 [project.optional-dependencies]
-test = [
+testing = [
   "coverage",
-  "codecov"
+  "codecov",
+  "pytest",
+  "pytest-django",
 ]
-lint = [
-  "black",
-  "flake8"
+linting = [
+  "flake8",
+  "flake8-pyproject",
+  "flake8-bugbear",
+  "flake8-comprehensions",
+  "flake8-tidy-imports",
+  "flake8-typing-imports",
+  "pylint",
 ]
 
 [tool.setuptools]
-package-dir = {"" = "src"}
+package-dir = { "" = "src" }
+include-package-data = true
+zip-safe = false
 
 [tool.setuptools.dynamic]
-dependencies = {file = "requirements/runtime.in"}
-version = {attr = "services.VERSION"}
+dependencies = { file = "requirements/runtime.in" }
+version = { attr = "services.__version__" }
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.setuptools.data-files]
+"share/django-service/requirements" = [
+  "requirements/py310-django42.txt",
+  "requirements/py310-django52.txt",
+  "requirements/py311-django42.txt",
+  "requirements/py311-django52.txt",
+  "requirements/py312-django42.txt",
+  "requirements/py312-django52.txt",
+  "requirements/py313-django52.txt",
+  "requirements/py314-django52.txt",
+]
+
 [tool.black]
-target-version = ['py311']
+target-version = ['py314']
 
 [tool.isort]
 profile = "black"
@@ -122,13 +147,8 @@ package = "services"
 package_dir = "src"
 filename = "CHANGELOG.rst"
 directory = "news/"
-version = "0.1.0"
-
-# For rendering properly for this project
+version = "0.3.0"
 issue_format = "`#{issue} <https://github.com/DLRSP/django-service/issues/{issue}>`_"
-# template = "tools/news/template.rst"
-
-# Grouping of entries, within our changelog
 type = [
   { name = "Process",                   directory = "process", showcontent = true },
   { name = "Deprecations and Removals", directory = "removal", showcontent = true },
@@ -139,9 +159,8 @@ type = [
   { name = "Trivial Changes",           directory = "trivial", showcontent = false },
 ]
 
-# bump-my-version
 [tool.bumpversion]
-current_version = "0.2.3"
+current_version = "0.3.0"
 allow_dirty = true
 
 [[tool.bumpversion.files]]

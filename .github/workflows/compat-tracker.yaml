@@ -1,0 +1,24 @@
+---
+name: Compat Tracker
+
+# Keep Python/Django compatibility milestones in sync with the shared timeline.
+# Milestone writes use the dlrsp-actions App token (secrets: inherit); the
+# repository GITHUB_TOKEN stays read-only.
+on:
+  workflow_dispatch:
+    inputs:
+      dry-run:
+        description: When "1", report actions without writing
+        required: false
+        default: ""
+  schedule:
+    - cron: '17 4 * * 1'
+
+jobs:
+  compat:
+    uses: DLRSP/workflows/.github/workflows/compat-tracker.yaml@main
+    permissions:
+      contents: read
+    with:
+      dry-run: ${{ inputs.dry-run }}
+    secrets: inherit
