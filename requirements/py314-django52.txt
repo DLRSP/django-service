@@ -126,13 +126,13 @@ django-filer==3.5.0 \
     --hash=sha256:0d1068524d30d06d0b2a6d3c1039ad84ec46c9c1d1f68df94e45b86e8d0e96f7 \
     --hash=sha256:159d6683916282cfbe8d7ccdbc5188d91344146d2805b89bcb3146a70a0d350f
     # via -r requirements/runtime.in
-django-filer-optimizer==0.4.10 \
-    --hash=sha256:6729fd72c78c40fffc99730619ed3529e6560fa7397a5bb47f689b1c22f0e6f4 \
-    --hash=sha256:6eade464d52e2ee77313ecafe93630647e13f557f709f5e7c4f3f7a10f1a1307
+django-filer-optimizer==0.4.11 \
+    --hash=sha256:4e68c91590fa1cf233e303f6c816c97d90a9b2a5574a952041780c91e8addac2 \
+    --hash=sha256:7fef473cbb6b7342be2a17611b70f2c5e3fc96f1986e43b4c16c6a3d36fdc727
     # via -r requirements/runtime.in
-django-hashtag==0.4.1 \
-    --hash=sha256:662e6d19cdaab05dfd016e950322ed751d0807ec21704c280e52ddc7a846acdf \
-    --hash=sha256:a7a283073f7dc1b8bff497e55143f7313dc8438ad785a091d9a5018b89ac10fb
+django-hashtag==0.4.2 \
+    --hash=sha256:8655dd4144eaa9262b03753c995e75748a2db4950e157f02e40da63f4e189921 \
+    --hash=sha256:b5a2c0a31b69b6a57cb8b37fd07f5e2956713de5dd2cb40260c13f7d1a8b928c
     # via -r requirements/runtime.in
 django-js-asset==4.0.1 \
     --hash=sha256:51ad1060115bf741bef88dc1287ca7f70e1d6ea7cf935f52a34f39eca9bd9db1 \
