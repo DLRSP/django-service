@@ -138,9 +138,9 @@ django-js-asset==4.0.1 \
     --hash=sha256:51ad1060115bf741bef88dc1287ca7f70e1d6ea7cf935f52a34f39eca9bd9db1 \
     --hash=sha256:967ac7d95ce094d9f65f358278bcd494201e2f9bbee936430150de83eac9f656
     # via django-prose-editor
-django-model-mixin==0.3.6 \
-    --hash=sha256:26d2fa99f92ad63156b45f529e3ad64794bf0cccdc739df086d69de7869dd8e2 \
-    --hash=sha256:814d5e1c015bd8c231b03a99370e10247ffb3d6aa637e192caac8ea475b0b637
+django-model-mixin==0.3.8 \
+    --hash=sha256:6c8813372f4ea8f841b8ace9810591c58ec68bd7d3fe14620a95a079a1e0a381 \
+    --hash=sha256:e6e459e779b3656b6790a07fbb57e258ee8720b4990bd4ee1fe13ebf7cfe001f
     # via -r requirements/runtime.in
 django-modeltranslation==0.19.17 \
     --hash=sha256:13bd9cab4e4aed0bef5624c17a7da2ac8c5538f0650adbd89ce8c878cbef02fd \
