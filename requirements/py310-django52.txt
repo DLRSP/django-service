@@ -205,9 +205,9 @@ django-filer==3.5.0 \
     --hash=sha256:0d1068524d30d06d0b2a6d3c1039ad84ec46c9c1d1f68df94e45b86e8d0e96f7 \
     --hash=sha256:159d6683916282cfbe8d7ccdbc5188d91344146d2805b89bcb3146a70a0d350f
     # via -r requirements/runtime.in
-django-filer-optimizer==0.4.11 \
-    --hash=sha256:4e68c91590fa1cf233e303f6c816c97d90a9b2a5574a952041780c91e8addac2 \
-    --hash=sha256:7fef473cbb6b7342be2a17611b70f2c5e3fc96f1986e43b4c16c6a3d36fdc727
+django-filer-optimizer==0.4.12 \
+    --hash=sha256:7c6a52ac090790bbc5fd1f05be503e69ae5321242f49344eb39b89abd33c7a85 \
+    --hash=sha256:a8a0e7d6789460ef7d4d4ea71ea4583499d4f14d0c1b205596497c3007605946
     # via -r requirements/runtime.in
 django-hashtag==0.4.2 \
     --hash=sha256:8655dd4144eaa9262b03753c995e75748a2db4950e157f02e40da63f4e189921 \
@@ -233,9 +233,9 @@ django-polymorphic==4.11.7 \
     --hash=sha256:23ee903f79b9c4ebd36fee952f955d80c3d51f3eee9fa23639c4bafe3be616a2 \
     --hash=sha256:9d616e9e2870efd62a5ee387294830c80935a31786e50da137bd76668dd5437d
     # via django-filer
-django-prose-editor==0.26.0 \
-    --hash=sha256:779961e528c8d3bc898507e541152d5922c886f86760447a5c4287ea1b9e3a8e \
-    --hash=sha256:bab8ceb6089b0b908daee954c0d51b0957d5604043fc26e847d61064730f0ae9
+django-prose-editor==0.27.0 \
+    --hash=sha256:14d5fb02c7c807dbfef1ca45d3de2fc1d589415b2f06905276ed529c37b83b98 \
+    --hash=sha256:8cf8ccb48cf1422373cc924ae08e987d2ed11f6c0256c556323d6d4d49eebdc8
     # via -r requirements/runtime.in
 django-taggit==6.1.0 \
     --hash=sha256:ab776264bbc76cb3d7e49e1bf9054962457831bd21c3a42db9138b41956e4cf0 \
@@ -660,9 +660,9 @@ reportlab==5.0.0 \
     # via
     #   easy-thumbnails
     #   svglib
-sqlparse==0.5.5 \
-    --hash=sha256:12a08b3bf3eec877c519589833aed092e2444e68240a3577e8e26148acc7b1ba \
-    --hash=sha256:e20d4a9b0b8585fdf63b10d30066c7c94c5d7a7ec47c889a2d83a3caa93ff28e
+sqlparse==0.6.0 \
+    --hash=sha256:113c35c75365ab9cc9c7231d68c6428fb11c085fc8e9eb1ad659b7ddbf6cd2b9 \
+    --hash=sha256:b861c0288ce2fa56209a9a6412d2e066ac664b3873b89c26c9d8415e8e32996f
     # via django
 svglib==2.1.0 \
     --hash=sha256:1c264ef21fe8840083e9c5a6033296d4c644e9d70c3ec42174be05fa5f8fbb9a \
