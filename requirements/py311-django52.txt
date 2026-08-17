@@ -205,9 +205,9 @@ django-filer==3.5.0 \
     --hash=sha256:0d1068524d30d06d0b2a6d3c1039ad84ec46c9c1d1f68df94e45b86e8d0e96f7 \
     --hash=sha256:159d6683916282cfbe8d7ccdbc5188d91344146d2805b89bcb3146a70a0d350f
     # via -r requirements/runtime.in
-django-filer-optimizer==0.4.14 \
-    --hash=sha256:0bbbcdd9ae6e8378ebdf53aa4be497bba6efb55b5ea909ac37d538558d60f1c6 \
-    --hash=sha256:cdcd26a0291e226acdcd1ade87060071bb184e483db7c695607f811c3e7d9d42
+django-filer-optimizer==0.4.15 \
+    --hash=sha256:7c649a878ac4526cf4261736b9f7df31f06295994c4f37daa6c76fb96970355d \
+    --hash=sha256:d44640785da75bfaeb5bd60b89de000b91f5aa2eaba4517088dfe3c7ced40fa3
     # via -r requirements/runtime.in
 django-hashtag==0.4.5 \
     --hash=sha256:3bd009abf2e2733cc55aec158c07c317c72c59c509c8df0d6af447c3fffbd188 \
