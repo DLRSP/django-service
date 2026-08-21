@@ -147,7 +147,7 @@ package = "services"
 package_dir = "src"
 filename = "CHANGELOG.rst"
 directory = "news/"
-version = "0.3.11"
+version = "0.3.12"
 issue_format = "`#{issue} <https://github.com/DLRSP/django-service/issues/{issue}>`_"
 type = [
   { name = "Process",                   directory = "process", showcontent = true },
@@ -160,7 +160,7 @@ type = [
 ]
 
 [tool.bumpversion]
-current_version = "0.3.11"
+current_version = "0.3.12"
 allow_dirty = true
 
 [[tool.bumpversion.files]]
