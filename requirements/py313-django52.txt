@@ -205,9 +205,9 @@ django-filer==3.5.0 \
     --hash=sha256:0d1068524d30d06d0b2a6d3c1039ad84ec46c9c1d1f68df94e45b86e8d0e96f7 \
     --hash=sha256:159d6683916282cfbe8d7ccdbc5188d91344146d2805b89bcb3146a70a0d350f
     # via -r requirements/runtime.in
-django-filer-optimizer==0.4.16 \
-    --hash=sha256:99e19fc3da6aa9e093b38f0846ce48e0e9be194bd102e9e1554d8dae9ad976c4 \
-    --hash=sha256:f1ac0bf14f12006350cbd7d189de66afab0031d2edf06cda7c57d7e024081bd2
+django-filer-optimizer==0.4.17 \
+    --hash=sha256:84b301f7483ca6c219570dcf3574f1339eea3f62263b370874e7503e3b48c24d \
+    --hash=sha256:c8929d5aef5e4464f29615e3aaaafc659c8955318785218ea7de98871ab071b5
     # via -r requirements/runtime.in
 django-hashtag==0.4.5 \
     --hash=sha256:3bd009abf2e2733cc55aec158c07c317c72c59c509c8df0d6af447c3fffbd188 \
@@ -696,9 +696,9 @@ py-svg-hush==0.3.0 \
     --hash=sha256:fa8d4c57699d2f90052226eda39ad7ebf21a52127afa07e06a9a7f535effc0ec \
     --hash=sha256:fdb6a371a8711276a89e9ebcb52e51a86590fe88c882ac443a8ca3227da3d757
     # via django-filer
-reportlab==5.0.0 \
-    --hash=sha256:9d5a3affa84919e1111ede580031266a570e93b1ce388219621347965ff1d93c \
-    --hash=sha256:e4494a0c6623ae213bb856fba523171b2b54a7bf629fda02d5e525a7b899a784
+reportlab==5.0.1 \
+    --hash=sha256:1c36e6bb0e71780c72331eba60da7f602e8d4389a8723825af71342e49d791e8 \
+    --hash=sha256:ebd13154be1c8515e665de70bd2d303ae9ddc3ef47e44afd5116441ca0283a26
     # via
     #   easy-thumbnails
     #   svglib
