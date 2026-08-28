@@ -205,21 +205,21 @@ django-filer==3.5.1 \
     --hash=sha256:1178682b5938c1ab3645dcb6f05d10ca0f86ef4b79474c1750f02095dd183065 \
     --hash=sha256:d0c1a06042d173e02770794c91ce18d71e18928728914e57fa9dfaece71fd5d7
     # via -r requirements/runtime.in
-django-filer-optimizer==0.4.18 \
-    --hash=sha256:68c2ec6233865fa59cef23ab5af0cb608620723c1bd5b155e9c6bd36096dbac9 \
-    --hash=sha256:8afc8e239e57af31142ca00719040c3691b93188d4e9637e44b9af51a9b6f1b9
+django-filer-optimizer==0.4.19 \
+    --hash=sha256:3fbf11d5088115e0dcaab0ce38c7e965556299fe6c7ea334b81f43078f433a23 \
+    --hash=sha256:d2811525bdd2a00a32b54509c3d353f82908de3ddb8944b6aeb46c249eaa6082
     # via -r requirements/runtime.in
-django-hashtag==0.4.5 \
-    --hash=sha256:3bd009abf2e2733cc55aec158c07c317c72c59c509c8df0d6af447c3fffbd188 \
-    --hash=sha256:ee2242000dac06ba208a1c164e59980501e2a74f64b2d388438bbf931ce67bbf
+django-hashtag==0.4.6 \
+    --hash=sha256:3d59f913acc5ba281bec190f440f2cee0590f10bb4f7e6ca0d4ccaf67f85d34f \
+    --hash=sha256:b662b42bb29e85a16edbd68a8de72ba8f6cb64e1dd020314b46c38ebc90d720e
     # via -r requirements/runtime.in
-django-js-asset==4.0.2 \
-    --hash=sha256:956385adfe374fada36b226b37bb009bdc781e40b12897adb6fa40e174777023 \
-    --hash=sha256:d5479f64ef2a06bf545a487555ba5571c63e5882e723432caa12d0863702dadb
+django-js-asset==4.1.0 \
+    --hash=sha256:044059a3181e4d43d81d3eefa3a9cbaf5cd6f2604a6e61deb1507b9b44eef6f2 \
+    --hash=sha256:8442924298430402edc6620d6383545c81610db08859e0162665309e68262270
     # via django-prose-editor
-django-model-mixin==0.3.9 \
-    --hash=sha256:4c680f0e6453bff060a0f277320700ad20bc21b35a754e09c759ede5543ca08f \
-    --hash=sha256:e324bad0ced2df4710962d5f2d9bcf5fe9e2c1b84481d3b545662289436095ec
+django-model-mixin==0.3.10 \
+    --hash=sha256:2c8e1409f8c767ee3b1ac0a36be7dabd8e47391e698865fb7b9b56c4baa92e2c \
+    --hash=sha256:77c9d04145af4d4fb6cb4f07854393effa59bc5eca6f43672debc07fedd981f0
     # via -r requirements/runtime.in
 django-modeltranslation==0.20.3 \
     --hash=sha256:0e1aaf77ce3dcf80c7ec67a6d67821635d07f4849c90363bc0afedb237b014f0 \
