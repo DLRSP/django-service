@@ -182,9 +182,9 @@ charset-normalizer==3.5.1 \
     --hash=sha256:fd0a274c0e5f9a21565cd9d3dd749b61f96b7aa1e20a93aa1ba4029518f2e5c0 \
     --hash=sha256:fdb8a068947befafba9952162645dc2fecaeb400e64584829ed5e9b2fbe21a7f
     # via reportlab
-cssselect2==0.10.0 \
-    --hash=sha256:5bc3e3e8da5e77a4a7396a464b5582200d8813bca40fa940263ac5ae57aafccd \
-    --hash=sha256:f80848dab8ae74bd359b819dc85db349770d6a2861b6db737ca527c248269ec3
+cssselect2==0.10.1 \
+    --hash=sha256:25cc4494d55985d6a6da359be48da6ce98c28dcbafa2314c383ace3fc32ec868 \
+    --hash=sha256:83b0d820ef589dabaf693289b647c2f5b410f76d285f56deba911ffa75a7b9d1
     # via svglib
 django==5.2.17 \
     --hash=sha256:9d4d93be539a18ab80d058eb515900e10951e04c537c5a6b394fc49528d3251f \
@@ -205,9 +205,9 @@ django-filer==3.5.1 \
     --hash=sha256:1178682b5938c1ab3645dcb6f05d10ca0f86ef4b79474c1750f02095dd183065 \
     --hash=sha256:d0c1a06042d173e02770794c91ce18d71e18928728914e57fa9dfaece71fd5d7
     # via -r requirements/runtime.in
-django-filer-optimizer==0.4.19 \
-    --hash=sha256:3fbf11d5088115e0dcaab0ce38c7e965556299fe6c7ea334b81f43078f433a23 \
-    --hash=sha256:d2811525bdd2a00a32b54509c3d353f82908de3ddb8944b6aeb46c249eaa6082
+django-filer-optimizer==0.4.20 \
+    --hash=sha256:0c835b6f60a12cc42c16666b7a8512603a5fb2e89d72ffcff75a279ac9cb2fca \
+    --hash=sha256:6a1ab0ab8661ebacfb106d7ca38e85cf4ef0482b42b66e404b74d27f3e2d593a
     # via -r requirements/runtime.in
 django-hashtag==0.4.6 \
     --hash=sha256:3d59f913acc5ba281bec190f440f2cee0590f10bb4f7e6ca0d4ccaf67f85d34f \
