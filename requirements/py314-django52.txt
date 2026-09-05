@@ -221,9 +221,9 @@ django-model-mixin==0.3.10 \
     --hash=sha256:2c8e1409f8c767ee3b1ac0a36be7dabd8e47391e698865fb7b9b56c4baa92e2c \
     --hash=sha256:77c9d04145af4d4fb6cb4f07854393effa59bc5eca6f43672debc07fedd981f0
     # via -r requirements/runtime.in
-django-modeltranslation==0.20.4 \
-    --hash=sha256:105676e3afcb08dd51ae5e97ac61c74dd51cff9e0e0d2cd333cd16dd93e24315 \
-    --hash=sha256:76871815982a136d722bf25407673d41c58e8421a904bfa87fd8fa4cadbdb510
+django-modeltranslation==0.20.5 \
+    --hash=sha256:7c7f81b1d0e3a9b27cd99c2484ffaa9334e1ae5ca277a2f350558d0943aee8d9 \
+    --hash=sha256:92ba590b10da73da6412039749bb3b38f8e13e0f8ebcd5663ea12781cd91b0d0
     # via -r requirements/runtime.in
 django-ordered-model==3.7.4 \
     --hash=sha256:dfcd3183fe0749dad1c9971cba1d6240ce7328742a30ddc92feca41107bb241d \
