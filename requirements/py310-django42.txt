@@ -55,9 +55,9 @@ django-polymorphic==4.11.7 \
     --hash=sha256:23ee903f79b9c4ebd36fee952f955d80c3d51f3eee9fa23639c4bafe3be616a2 \
     --hash=sha256:9d616e9e2870efd62a5ee387294830c80935a31786e50da137bd76668dd5437d
     # via django-filer
-django-prose-editor==0.27.2 \
-    --hash=sha256:0f5d2a7ca397f333523589e3a022058ca4ca1d9b786a330a3995f231eb099615 \
-    --hash=sha256:a88895376f3449bb6b2ad642bcc9f53219d4962b54677327c7763a0ef5a62acc
+django-prose-editor==0.27.3 \
+    --hash=sha256:26d2a9d8f1fb9d07f041de909de26f68c1a3872680be24c1c9287064a172fba0 \
+    --hash=sha256:4be9801e0cf55b870dc13fa74af3df0cdfba5ed201d954c672649ee983094eae
     # via -r requirements/runtime.in
 django-taggit==6.1.0 \
     --hash=sha256:ab776264bbc76cb3d7e49e1bf9054962457831bd21c3a42db9138b41956e4cf0 \
